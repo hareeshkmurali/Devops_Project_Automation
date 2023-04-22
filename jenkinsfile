@@ -5,14 +5,14 @@ pipeline{
 
     stages{
 
-        stage('git checkout'){
+        stage('Git checkout'){
 
             steps{
-                gitcheckout{
-                    branch: "main",
-                    url: "https://github.com/hareeshkmurali/Devops_Project_Automation.git"
-                    }
-                }
+            gitcheckout{
+                branch: "main",
+                url: "https://github.com/hareeshkmurali/Devops_Project_Automation.git"
+            }
             }
         }
     }
+}
