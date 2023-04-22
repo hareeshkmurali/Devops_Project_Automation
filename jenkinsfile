@@ -8,15 +8,11 @@ pipeline{
         stage('git checkout'){
 
             steps{
-
-                script{
-
-                    gitcheckout{
-                      branch: "main"
-                      url: "https://github.com/hareeshkmurali/Devops_Project_Automation.git"
+                gitcheckout{
+                    branch: "main",
+                    url: "https://github.com/hareeshkmurali/Devops_Project_Automation.git"
                     }
                 }
             }
         }
     }
-}
