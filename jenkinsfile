@@ -1,0 +1,17 @@
+pipeline{
+    ageny any
+
+    stages{
+
+        stage('git checkout'){
+
+            steps{
+
+                script{
+                    branch: "main"
+                    url: "https://github.com/hareeshkmurali/Devops_Project_Automation.git"
+                }
+            }
+        }
+    }
+}
